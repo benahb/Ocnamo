@@ -25,11 +25,11 @@ header{
 }
 
 .logo{
-    color:#c2c5c9; 
+    color:#c2c5c9;
     font-weight: bold;
     font-size: 2em;
     text-decoration: none;
-    
+
 }
 .logo span{
     color: #1f98fb;
@@ -50,7 +50,7 @@ header{
     margin-left: 30px;
     font-weight: 300;
 }
-.btn-reserve{
+/*.btn-reserve{
     font-size: 0.6em;
     padding: 5px 5px;
     background: #4d0dc5;
@@ -60,25 +60,32 @@ header{
 }
 .btn-reserve:hover{
     background: #a427ec;
-    transition: ease-out;  
-}
+    transition: ease-out;
+}*/
+
 header .navbar li a:hover{
     color: #1ac6fa;
     border-bottom: 2px solid #2fceff;
 }
 
-.banniere{
+.banniere {
+
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./bg-img/pexels-chan-walrus-941861.jpg);
-    background-size: cover;
+    /*background-image: url(public\images\bg-img\1.jpg);*/
+    background-size:cover;
+    background-color: #000;
+
+
 }
 
+
 .banniere .contenu{
+    position: absolute;
     max-width: 70%;
     text-align: center;
 
@@ -88,10 +95,18 @@ header .navbar li a:hover{
     font-size: 1em;
     text-transform: capitalize;
 }
-
+/* .banniere .contenu p{
+    margin-right: 20px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
 .contenu p:nth-child(2){
     color: #e2f3f7;
     font-size: 1em;
+
 }
 
 .btn1{
@@ -149,7 +164,7 @@ section{
 .row .col50 h2{
     margin-bottom: 20px;
 
-} 
+}
 .titre-text{
     color: #000;
     font-size: 2em;
@@ -176,8 +191,16 @@ section{
 }
 .menu{
     margin-top: -100px;
+    background-color: #383636;
 }
+ .menu .titre h2{
+    color: #e2e2ce;
+    margin-top: 60px;
+ }
 
+ .menu .titre p{
+    color: #e9e7d4;
+ }
 .menu .contenu{
     display:flex;
     justify-content: center;
@@ -185,14 +208,14 @@ section{
     margin-top: 40px;
 }
 
-.menu .contenu .box{  
+.menu .contenu .box{
     width: 350px;
     margin: 20px;
     border: 20px solid #fff;
     box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
     border-radius: 50px;
-    
-} 
+
+}
 
 .menu .contenu .box .imbox{
     position: relative;
@@ -214,7 +237,7 @@ border-radius: 50px;
 .menu .contenu .box .text{
     text-align: center;
     font-weight: 300px;
-    color: #111;
+    color: #f7f6e0;
 }
 
 .menu .contenu .box .text h3{
@@ -223,6 +246,7 @@ border-radius: 50px;
 
 .expert{
     margin-top: -100px;
+    background-color: #1f1d1d;
 }
 
 .expert .contenu{
@@ -248,13 +272,21 @@ margin-top: 40px;
 }
 
 .expert .contenu .box h3{
-    color: #111;
+    color: #c5baba;
     font-weight: 300;
     text-align: center;
 }
 
+.expert h2{
+    margin-top: 60px;
+    color: #c2c5c9;
+}
+
+.expert p{
+    color: #ccc6c6;
+}
 .temoignage{
-    background-image: url(img/profile/imageedit_36_4154146688.jpg);
+    background-color: #3b3535;
     background-size: cover;
 }
 
@@ -270,7 +302,7 @@ margin-top: 40px;
 .temoignage .contenu .box{
     width: 340px;
     margin: 20px;
-    background: #fff;
+    background: #e9dede;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,19 +351,43 @@ margin-top: 40px;
 }
 
 .contact{
-    background-image: url(img/experts/pexels-terje-sollie-313700.jpg);
+    /* background-image: url(img/experts/pexels-terje-sollie-313700.jpg); */
+    background-color:#3b3535;
     background-size: cover;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
     width: 100%;
     background-position: unset;
 }
 
+.contact .titre-noir img{
+
+    width: 1300px;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    background-size: cover;
+    align-items: stretch;
+}
+
+.contact h2{
+    margin-top: -25px;
+    color: #c4b2b2;
+    text-align: center;
+}
+
+.contact p{
+    margin-bottom: 10px;
+    color: #d1c1c1;
+    text-align: center;
+}
+
 .contactform{
+    position: relative;
     padding: 75px 50px;
     background: #f3e9e9;
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
     max-width: 500px;
-    margin-top: 50px;
+    margin-top: -625px;
     justify-content: center;
     align-items: center;
     margin-left: 29%;
@@ -381,7 +437,7 @@ text-align: center;
     justify-content: center;
     border-radius: 50px;
     transition: ease-out;
-    
+
 }
 
 
@@ -390,38 +446,174 @@ text-align: center;
     background: #1ac6fa;
 }
 
+.reservation{
+    /* background-image: url(img/experts/pexels-terje-sollie-313700.jpg); */
+    background-color:#3b3535;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+.reservation .titre-noire  img{
+    width: 1300px;
+    height: 800px;
+    border-radius: 20px;
+
+}
+
+.reservation h2{
+
+    color: #e7dddd;
+    text-align: center;
+}
+.reservation span{
+    color: #1f98fb;
+    font-size: 2rem;
+}
+
+.reservation p{
+    margin-bottom: 10px;
+    color: #e6dcdc;
+    text-align: center;
+}
+
+.contactforme{
+    position: relative;
+    padding: 75px 50px;
+    background: #f3e9e9;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: -625px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 29%;
+    border-radius: 20px;
+}
+
+.contactforme .inputboites{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactforme h3{
+color: #111;
+font-size: 1.2em;
+margin-bottom: 20px;
+text-align: center;
+
+}
+
+.contactforme .inputboites input,
+.contactforme .inputboites textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactforme .inputboites input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #d4cfcf;
+    background: #4427ec;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: ease-out;
+
+}
+
+
+.inputboites input[type="submit"]:hover{
+    transition: 0.5s;
+    background: #1ac6fa;
+}
+
+
+
+
 .horaire{
-    background-color:#ccc6c6  
+    background-color:#ccc6c6
+}
+
+.horaire .texte  h2 {
+    font-size: 1.2;
+    display: flex;
+    text-align: center;
+    position: relative;
+
 }
 .horaire .infohours h3{
-    font-size: 1.5em;
-    color:rgb(32, 26, 9);
+    font-size: 1.4em;
+    color:rgb(131, 73, 19);
     display: flex;
     justify-content: center;
     align-items:center;
-    
+
 }
 .jour{
-    color: rgb(48, 41, 25);
+    color: rgb(153, 94, 5);
     display:flex;
     justify-content:center;
     align-items:center;
     margin-top: 2px;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 300;
     padding: 5px;
     letter-spacing: 2px;
     flex-direction: column;
     position: relative;
-    
-    
+
+
 
 }
+
 .image{
     display:flex;
+    justify-content:center;
+    position: relative;
+}
+.image img{
+    border-radius: 200px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.google{
+    display: flex;
     justify-content: center;
-    
-      
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 50px;
+
+}
+
+.google map{
+    width: max-content;
+    max-height: max-content;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 header.sticky{
@@ -446,7 +638,7 @@ header.sticky li a:hover{
    header,
    header.sticky{
     padding: 10px 20px;
-   } 
+   }
 
    header .navbar li{
     margin-left: 0px;
@@ -461,8 +653,8 @@ header.sticky li a:hover{
    .btn-reserve{
     margin-top: 10px;
    }
-   
-   
+
+
    .navbar{
     display: none ;
    }
@@ -494,15 +686,15 @@ header.sticky li a:hover{
     background-position: center;
     cursor: pointer;
     background-size: 30px;
-    
-   } 
+
+   }
 
    .menutoggle.active{
     background-image: url(./bg-img/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    
+
    }
 
    header.sticky .menutoggle{
@@ -513,7 +705,7 @@ header.sticky li a:hover{
    .banniere .contenu h2{
     font-size: 1.2em;
    }
-  
+
    .row .col50 img{
     margin-left: 18%;
    }
@@ -521,7 +713,7 @@ header.sticky li a:hover{
 
    .contenu p:nth-child(2){
     font-size: 1.2em;
-   } 
+   }
 
 
    .expert{
@@ -548,13 +740,13 @@ header.sticky li a:hover{
 
    .temoignage p{
     text-align: center;
-    
+
    }
 
    .contactform{
     margin-left: 25%;
    }
-    
+
 
     .row .col50 {
         position: relative;
@@ -577,7 +769,7 @@ header.sticky li a:hover{
         font-size: 2.2em;
         color: #fff;
     }
-   
+
     .titre-text{
         color: #000;
         font-size: 2rem;
@@ -594,4 +786,50 @@ header.sticky li a:hover{
     .temoignage p{
         text-align: center;
     }
+}
+
+.categorie{
+    background-color: #1f1d1d;
+
+}
+
+.plats {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+  .plats img {
+    width: 230px;
+    height: auto;
+    border-radius: 40px;
+
+  }
+
+  .plats h4 {
+    display: inline-block;
+    text-align: center;
+    color: #e2f3f7;
+  }
+
+  .categorie h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: solid;
+    color:#d4cfcf;
+  }
+.categorie h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #dbcccc;
+}
+
+.categorie span{
+    color: #7bfceb;
+}
+
+.prix .prix{
+    size: 1.5em;
+
 }

@@ -23,8 +23,20 @@ Route::get('/', [MainController::class, 'accueilController'])->name
  Route::get('/menu', [MainController::class, 'menuController'])->name
  ('main.menu');
 
+ Route::get('/apropos', [MainController::class, 'aproposController'])->name
+ ('main.apropos');
+
+ Route::get('/expert', [MainController::class, 'expertController'])->name
+ ('main.expert');
+
  Route::get('/reservation', [MainController::class, 'reservationController'])->name
  ('main.reservation');
 
  Route::get('/contact', [MainController::class, 'contactController'])->name
  ('main.contact');
+
+
+ Route::get('/cartemenu', [MainController::class, 'cartemenuController'])->name
+ ('main.cartemenu');
+
+
