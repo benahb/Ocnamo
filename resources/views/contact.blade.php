@@ -9,7 +9,7 @@
         <div class="titre-noir">
             <h2 class="titre-text"><span>C</span>ontact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Possimus, eum velit.</p>
-            <img src="./images\bg-img\pexels-quark-studio-3201921.jpg" alt="">
+            <img src="{{ asset('/images\bg-img\pexels-quark-studio-3201921.jpg') }}" alt="">
         </div>
         <div class="contactform">
             <h3>envoyer un message</h3>
@@ -32,7 +32,7 @@
             <h2 class="titre-text"><span>H</span>oraires & <span>  A</span>dresse</h2>
         </div>
         <div class="image">
-            <img src="./logo\img10.png" alt="image horaire">
+            <img src="{{ asset('/logo\img10.png') }}" alt="image horaire">
         </div>
         <div class="infohours">
             <h3>Horaires d'ouverture</h3>
@@ -65,11 +65,6 @@
             </div>
         </div>
         </div>
-        <div class="copyright">
-            <p>Copyright 2023 <a href="#">Ocnamo Restaurant</a> Tous droits Résevés</p>
-        </div>
- 
     </section>
     @endsection
-</body>
-</html>
+

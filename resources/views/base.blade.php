@@ -12,7 +12,9 @@
         {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> --}}
 
 
-    <link rel="shortcut icon" href="/logo o cnamo/img7.png" type="image/x-icon" <link rel="stylesheet"
+    <link rel="shortcut icon" href="{{ asset('images/logo/img10.png') }}" type="image/x-icon"/>
+
+    {{-- <link rel="stylesheet" --}}
 
     {{-- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" --}}
     {{-- integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" --}}
@@ -32,14 +34,13 @@
 
 <body>
     <header>
-        <a href="#" class="logo"><span>O</span>cnamo</a>
+        <a href="{{ route('main.contact')}}" class="logo"><span>O</span>cnamo</a>
         <div class="menutoggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
             <li><a href="{{ route('main.accueil') }}">Accueil</a></li>
             <li><a href="{{ route('main.apropos') }}">A propos de nous</a></li>
             <li><a href="{{ route('main.menu') }}">Menu</a></li>
             <li><a href="{{ route('main.cartemenu') }}">Carte</a></li>
-            <li><a href="{{ route('main.expert') }}">Les Chefs</a></li>
             <li><a href="{{ route('main.contact') }}">contact</a></li>
             <li><a href="{{ route('main.reservation') }}">Réservation</a></li>
         </ul>
@@ -48,11 +49,17 @@
 
     <footer>
 
+        <div class="copyright">
+            <p>Copyright {{ date('Y') }} &middot; <a href="{{ route('main.apropos') }}">Ocnamo Restaurant</a> .Tous droits Résevés</p>
+        </div>
+
     </footer>
-    <script type="text/javascript">
 
 
-        </script>
+   <script>
+
+
+   </script>
 
         {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> --}}
     </body>

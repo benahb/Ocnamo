@@ -7,34 +7,33 @@ use Illuminate\Http\Request;
 
 class Maincontroller extends Controller
 {
-    public function accueilController()
+
+
+
+    public function accueil()
     {
 
         return view('accueil');
     }
 
-    public function aproposController()
+    public function apropos()
     {
         return view('apropos');
 
     }
 
-    public function expertController()
-    {
-        return view('expert');
-    }
 
-    public function menuController()
+    public function menu()
     {
         return view('menu');
     }
 
-    public function reservationController()
+    public function reservation()
     {
         return view('reservation');
     }
 
-    public function contactController()
+    public function contact()
     {
         return view('contact');
     }
@@ -45,9 +44,9 @@ class Maincontroller extends Controller
         // return view('cartemenu');
     // }
 
-    public function cartemenuController()
+    public function cartemenu()
     {
-        $categories = ['Petit déjeuner', 'Entrées', 'Plats', 'Desserts', 'Boissons'];
+        $categories = ['Petits déjeuner', 'Entrées', 'Plats', 'Desserts', 'Boissons'];
 
         return view('cartemenu', [
             'categories' => $categories,

@@ -18,7 +18,7 @@
         </div>
         <div class="col50">
             <div class="img">
-                <img src="./images\img\Plats\pexels-valeria-boltneva-1833349.jpg" alt="image">
+                <img src="{{ asset('/images\img\Plats\pexels-valeria-boltneva-1833349.jpg') }}" alt="image">
             </div>
         </div>
     </div>

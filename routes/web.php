@@ -16,27 +16,25 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [MainController::class, 'accueilController'])->name
+Route::get('/', [MainController::class, 'accueil'])->name
  ('main.accueil');
 
 
- Route::get('/menu', [MainController::class, 'menuController'])->name
+ Route::get('/menu', [MainController::class, 'menu'])->name
  ('main.menu');
 
- Route::get('/apropos', [MainController::class, 'aproposController'])->name
+ Route::get('/apropos', [MainController::class, 'apropos'])->name
  ('main.apropos');
 
- Route::get('/expert', [MainController::class, 'expertController'])->name
- ('main.expert');
 
- Route::get('/reservation', [MainController::class, 'reservationController'])->name
+ Route::get('/reservation', [MainController::class, 'reservation'])->name
  ('main.reservation');
 
- Route::get('/contact', [MainController::class, 'contactController'])->name
+ Route::get('/contact', [MainController::class, 'contact'])->name
  ('main.contact');
 
 
- Route::get('/cartemenu', [MainController::class, 'cartemenuController'])->name
+ Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name
  ('main.cartemenu');
 
 

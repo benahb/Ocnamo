@@ -9,7 +9,7 @@
         <div class="titre-noire">
             <h2 class="titre-text1"><span>R</span>éservation</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Possimus, eum velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsum magnam quisquam, reprehenderit ut distinctio architecto sequi rerum, dolorum error asperiores.</p>
-            <img src="./images\bg-img\pexels-terje-sollie-313700.jpg" alt="">
+            <img src="{{ asset('/images\bg-img\pexels-terje-sollie-313700.jpg') }}" alt="">
         </div>
         <div class="contactforme">
             <h3>Réservez une table <br> ou <br> Passez votre commande</h3>
@@ -59,7 +59,7 @@
         <div class="contenu">
             <div class="box">
                 <div class="imbox">
-                    <img src="./images/img/profile/austin-distel-7uoMmzPd2JA-unsplash.jpg" alt="">
+                    <img src="{{ asset('/images/img/profile/austin-distel-7uoMmzPd2JA-unsplash.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum velit, labore quibusdam
@@ -69,7 +69,7 @@
             </div>
             <div class="box">
                 <div class="imbox">
-                    <img src="./images/img/profile/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="">
+                    <img src="{{ asset('/images/img/profile/michael-dam-mEZ3PoFGs_k-unsplash.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum velit, labore quibusdam
@@ -79,7 +79,7 @@
             </div>
             <div class="box">
                 <div class="imbox">
-                    <img src="./images/img/profile/midas-hofstra-a6PMA5JEmWE-unsplash.jpg" alt="">
+                    <img src="{{ asset('/images/img/profile/midas-hofstra-a6PMA5JEmWE-unsplash.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum velit, labore quibusdam
@@ -92,5 +92,4 @@
         </div>
     </section>
 @endsection
-</body>
-</html>
+

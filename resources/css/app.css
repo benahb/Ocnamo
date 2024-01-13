@@ -212,7 +212,7 @@ section{
     width: 350px;
     margin: 20px;
     border: 20px solid #fff;
-    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    box-shadow: 20px 15px 35px rgba(148, 126, 106, 0.8);
     border-radius: 50px;
 
 }
@@ -240,9 +240,26 @@ border-radius: 50px;
     color: #f7f6e0;
 }
 
-.menu .contenu .box .text h3{
-    font-weight: 300;
+.menu .contenu .box .text .btn {
+    /* font-weight: 300; */
+    font-size: 0.8rem;
+    color: #e2f3f7;
+    background-color: #127acf;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 15px;
 }
+
+.menu .contenu .box .text .btn:hover{
+    letter-spacing: 4px;
+}
+
 
 .expert{
     margin-top: -100px;
@@ -794,13 +811,14 @@ header.sticky li a:hover{
 }
 
 .plats {
-    display: flex;
+    display:flex;
     list-style: none;
     margin: 0;
     padding: 0;
     }
 
   .plats img {
+
     width: 230px;
     height: auto;
     border-radius: 40px;
@@ -817,7 +835,7 @@ header.sticky li a:hover{
     font-size: 1.3rem;
     text-align: center;
     text-decoration: solid;
-    color:#d4cfcf;
+    color:#a0942b;
   }
 .categorie h2{
     font-size: 2rem;
@@ -833,3 +851,24 @@ header.sticky li a:hover{
     size: 1.5em;
 
 }
+.buttoncontent{
+    font-size: 0.8em;
+    color: #685d5d;
+    background: #20e9b7;
+    padding: 5px 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 15px;
+    transition: ease-out;
+
+}
+
+.buttoncontent:hover{
+    color: #585750;
+    background: #ece81f;
+    letter-spacing: 4px;
+    }

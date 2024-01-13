@@ -12,9 +12,10 @@
       <ul class="plats">
         @for ($i = 0; $i< 5; $i++)
         <li>
-          <img src="./images\img\Plats\imageedit_4_8271986045.jpg" alt="ella esso">
+          <img src="{{ asset('/images\img\Plats\imageedit_4_8271986045.jpg') }}" alt="ella esso">
           <h4>Lorem ipsum ipsum .</h4>
           <span class="price">9.99 eur</span>
+         <a href="{{ route('main.menu') }}"><button class="buttoncontent" type="submit" >Voir plus</button></a>
         </li>
         @endfor
       </ul>
