@@ -79,8 +79,6 @@ header .navbar li a:hover{
     /*background-image: url(public\images\bg-img\1.jpg);*/
     background-size:cover;
     background-color: #000;
-
-
 }
 
 
@@ -88,13 +86,14 @@ header .navbar li a:hover{
     position: absolute;
     max-width: 70%;
     text-align: center;
-
 }
+
 .banniere .contenu{
     color: #fff;
     font-size: 1em;
     text-transform: capitalize;
 }
+
 /* .banniere .contenu p{
     margin-right: 20px;
     padding-left: 50px;
@@ -103,10 +102,10 @@ header .navbar li a:hover{
     justify-content: center;
     text-align: center;
 } */
+
 .contenu p:nth-child(2){
     color: #e2f3f7;
     font-size: 1em;
-
 }
 
 .btn1{
@@ -161,9 +160,9 @@ section{
     align-items: center; */
 
     
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     
 }
 .row .col50{
@@ -367,7 +366,7 @@ margin-top: 40px;
     font-style: italic;
 }
 .temoignage .contenu .box .text h3{
-    color: #fb911f;
+    color: #0be087;
     margin-top: 20px;
     font-size: 1em;
     font-weight: 600;
@@ -863,9 +862,9 @@ header.sticky li a:hover{
     align-content: flex-start;
     justify-content: flex-start;
     flex-direction: row-reverse;
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
 
   }
 

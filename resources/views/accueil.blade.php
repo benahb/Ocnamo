@@ -7,7 +7,7 @@
 <body>
     <section class="banniere" id="banniere">
         
-        <img src="{{ asset('/images\bg-img\2.jpg') }}" alt="">
+        <img src="{{ asset('/images\bg-img\2.jpg') }}" alt="image bg">
         <div class="contenu">
             <h2>Decouvrez nos plats authentiques</h2>
             <p>L"Ocnamo vous invite à un savoureux voyage au coeur du Cameroun authentique.
