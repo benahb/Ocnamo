@@ -12,19 +12,29 @@
             <img src="{{ asset('/images\bg-img\pexels-quark-studio-3201921.jpg') }}" alt="">
         </div>
         <div class="contactform">
+        <form id="contact" action="{{ route('contactSend') }}" method="POST">
+                @csrf
             <h3>envoyer un message</h3>
             <div class="inputboite">
-                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom et Prénom" name="nom">
             </div>
             <div class="inputboite">
-                <input type="text" placeholder="email">
+                <input type="text" placeholder="email" name="email">
             </div>
             <div class="inputboite">
-                <textarea placeholder="message"></textarea>
+                <textarea placeholder="message" name="message"></textarea>
             </div>
             <div class="inputboite">
                 <input type="submit" value="envoyer">
             </div>
+        </form>
+             @if (session('success'))
+            <div class="alert-success">
+        
+                {{ session('success') }}
+            </div>
+             @endif
+            
         </div>
     </section>
     <section id="horaire" class="horaire">
@@ -35,20 +45,20 @@
             <img src="{{ asset('/logo\img10.png') }}" alt="image horaire">
         </div>
         <div class="infohours">
-            <h3>Horaires d'ouverture</h3>
-
-            <div class="jour">
-                <h4 class="day">Lundi</h4>
-                <p class="hours">Fermé</p>
-            </div>
-            <div class="jour">
-                <h4 class="day">Mardi</h4>
-                <p class="hours">12h00 - 22h30</p>
-            </div>
-            <div class="jour">
-                <h4 class="day">Mercredi</h4>
-                <p class="hours">12h00 - 22h30</p>
-            </div>
+                <h3>Horaires d'ouverture</h3>
+                
+                <div class="jour">
+                    <h4 class="day">Lundi</h4>
+                    <p class="hours">Fermé</p>
+                </div>
+                <div class="jour">
+                    <h4 class="day">Mardi</h4>
+                    <p class="hours">12h00 - 22h30</p>
+                </div>
+                <div class="jour">
+                    <h4 class="day">Mercredi</h4>
+                    <p class="hours">12h00 - 22h30</p>
+                </div>
             <div class="jour">
                 <h4 class="day"><span>Jeu</span> - <span>Sam</span></h4>
                 <p class="hours">

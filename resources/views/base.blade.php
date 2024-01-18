@@ -34,14 +34,14 @@
 
 <body>
     <header>
-        <a href="{{ route('main.contact')}}" class="logo"><span>O</span>cnamo</a>
+        <a href="{{ route('main.apropos')}}" class="logo"><span>O</span>cnamo</a>
         <div class="menutoggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
             <li><a href="{{ route('main.accueil') }}">Accueil</a></li>
             <li><a href="{{ route('main.apropos') }}">A propos de nous</a></li>
             <li><a href="{{ route('main.menu') }}">Menu</a></li>
             <li><a href="{{ route('main.cartemenu') }}">Carte</a></li>
-            <li><a href="{{ route('main.contact') }}">contact</a></li>
+            <li><a href="{{ route('contact') }}">contact</a></li>
             <li><a href="{{ route('main.reservation') }}">Réservation</a></li>
         </ul>
     </header>

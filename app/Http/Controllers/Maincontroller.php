@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\models\Actu;
+use App\Models\Categorie;
 use Illuminate\Http\Request;
 
 class Maincontroller extends Controller
@@ -12,8 +13,11 @@ class Maincontroller extends Controller
 
     public function accueil()
     {
-
-        return view('accueil');
+        $actus = Actu::all();
+        return view('accueil' , [
+            'actus' => $actus,
+        ]);
+       
     }
 
     public function apropos()
@@ -33,10 +37,7 @@ class Maincontroller extends Controller
         return view('reservation');
     }
 
-    public function contact()
-    {
-        return view('contact');
-    }
+   
 
 
     // public function cartemenuController()
@@ -46,7 +47,8 @@ class Maincontroller extends Controller
 
     public function cartemenu()
     {
-        $categories = ['Petits déjeuner', 'Entrées', 'Plats', 'Desserts', 'Boissons'];
+        // $categories = ['Petits déjeuner', 'Entrées', 'Plats', 'Desserts', 'Boissons'];
+        $categories = Categorie::all();
 
         return view('cartemenu', [
             'categories' => $categories,

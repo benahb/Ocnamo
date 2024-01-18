@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ContactController;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,25 +18,20 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [MainController::class, 'accueil'])->name
- ('main.accueil');
+Route::get('/', [MainController::class, 'accueil'])->name('main.accueil');
 
 
- Route::get('/menu', [MainController::class, 'menu'])->name
- ('main.menu');
+Route::get('/menu', [MainController::class, 'menu'])->name('main.menu');
 
- Route::get('/apropos', [MainController::class, 'apropos'])->name
- ('main.apropos');
+Route::get('/apropos', [MainController::class, 'apropos'])->name('main.apropos');
 
 
- Route::get('/reservation', [MainController::class, 'reservation'])->name
- ('main.reservation');
+Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');
 
- Route::get('/contact', [MainController::class, 'contact'])->name
- ('main.contact');
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 
-
- Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name
- ('main.cartemenu');
+Route::post('/contact', [ContactController::class, 'contactSend'])->name('contactSend');
 
 
+
+Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name('main.cartemenu');
