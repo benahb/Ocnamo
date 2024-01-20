@@ -14,41 +14,39 @@
         <div class="contactforme">
             <h3>Réservez une table <br> ou <br> Passez votre commande</h3>
             <div class="inputboites">
-                <input type="date" placeholder="date">
+                <form id="reservation" action="dataInsert" method="POST">
 
-            </div>
-            <div class="inputboites">
-                <input type="Name" placeholder="votre Nom et Prénom">
-            </div>
-            <div class="inputboites">
-                <input type="number" placeholder="nombre de personnes">
-            </div>
-            <div class="inputboites">
-                <input type="telephone" placeholder="N° de télépohne">
-                <select name="Hour">
-                    <option value="Hour-select">séléctionez l'heure</option>
-                    <option value="10">10:00</option>
-                    <option value="12">11:00</option>
-                    <option value="14">12:00</option>
-                    <option value="16">13:00</option>
-                    <option value="18">14:00</option>
-                    <option value="20">15:00</option>
-                    <option value="22">16:00</option>
-                    <option value="10">17:00</option>
-                    <option value="12">18:00</option>
-                    <option value="14">19:00</option>
-                    <option value="16">20:00</option>
-                    <option value="18">21:00</option>
-                    <option value="20">22:00</option>
-                    <option value="22">23:00</option>
-                </select>
-            </div>
-            <div class="inputboites">
-                <textarea placeholder="message"></textarea>
-            </div>
-            <div class="inputboites">
-                <input type="submit" value="valider">
-            </div>
+                    @csrf
+                    {{-- <label for="jour" class="control-label">Date</label> --}}
+                    <input type="date" placeholder="date" name="jour">
+                    
+                </div>
+                <div class="inputboites">
+                    {{-- <label for="name" class="control-label">Nom et prénom </label> --}}
+                    <input type="name" placeholder="votre nom et prénom" name="name">
+                </div>
+                <div class="inputboites">
+                    
+                    {{-- <label for="couvert" class="control-label">Nombre de couvert</label> --}}
+                    <input type="number" placeholder="Nombre de personnes" name="couvert">
+                </div>
+                <div class="inputboites">
+                    {{-- <label for="telephone" class="control-label">Numéro téléphone</label> --}}
+                    <input type="telephone" placeholder="N° de télépohne" name="telephone">
+                </div>   
+                <div class="inputboites">
+                    {{-- <label for="heure" class="control-label">Séléctionez l'heure</label> --}}
+                    <input type="time" name="heure" id="">
+                    
+                </div>
+                <div class="inputboites">
+                    {{-- <label for="commentaire" class="control-label">Message</label> --}}
+                    <textarea placeholder="message" name="commentaire"></textarea>
+                </div>
+                <div class="inputboites">
+                    <input type="submit" value="envoyer">
+                </div>
+            </form>
         </div>
     </section>
     <section class="temoignage" id="temoingnage">

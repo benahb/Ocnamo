@@ -32,18 +32,6 @@ class Maincontroller extends Controller
         return view('menu');
     }
 
-    public function reservation()
-    {
-        return view('reservation');
-    }
-
-   
-
-
-    // public function cartemenuController()
-    // {
-        // return view('cartemenu');
-    // }
 
     public function cartemenu()
     {
@@ -54,6 +42,14 @@ class Maincontroller extends Controller
             'categories' => $categories,
         ]);
     }
+   
+
+
+    // public function cartemenuController()
+    // {
+        // return view('cartemenu');
+    // }
+
 
 }
 

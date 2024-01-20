@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ContactController;
-use App\Models\Contact;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Contact;
+use App\Models\Reservation;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,12 +28,15 @@ Route::get('/menu', [MainController::class, 'menu'])->name('main.menu');
 Route::get('/apropos', [MainController::class, 'apropos'])->name('main.apropos');
 
 
-Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');
-
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 
-Route::post('/contact', [ContactController::class, 'contactSend'])->name('contactSend');
+Route::post('/formcreate', [ContactController::class, 'formcreate'])->name('formcreate');
 
+Route::get('/reservation', [ReservationController::class, 'reservation'])->name('reservation');
 
+Route::post('/dataInsert', [ReservationController::class, 'DataInsert'])->name('dataInsert');
 
 Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name('main.cartemenu');
+
+
+

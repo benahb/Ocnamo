@@ -12,24 +12,45 @@ class ContactController extends Controller
         return view('contact');
     }
 
-    public function contactSend(Request $request)
+    public function formcreate(Request $request)
     {
-        $request->validate([
-            'nom,'=> 'required',
-            'email'=> 'required',
-            'message'=>'required',
-        ]);
+        $data = $request->all();
+        $nom = $request->input('nom');
+        $email = $request->input('email');
+        $message = $request->input('message');
 
+        $isInsertSuccress = Contact::insert(['nom'=>$nom, 
+                            'email'=>$email,
+                            'message'=>$message
+        
+    ]);
+        if($isInsertSuccress) echo 
+        '<h1>Message envoyé</h1>';
+        else echo '<h1>Erreur message non envoyer</h1>';
 
-        $contact = new Contact();
-
-        $contact->nom = $request->nom;
-        $contact->email = $request->email;
-        $contact->message = $request->message;
-
-
-        $contact->save();
-
-        return redirect()->route('contactSend')->with('success', 'le message a bien été envoyer');
     }
+    
+
+      
+
+
+    // {
+    //     $request->validate([
+    //         'nom,'=> 'required',
+    //         'email'=> 'required',
+    //         'message'=>'required',
+    //     ]);
+
+
+    //     $contact = new Contact();
+
+    //     $contact->nom = $request->nom;
+    //     $contact->email = $request->email;
+    //     $contact->message = $request->message;
+
+
+    //     $contact->save();
+
+    //     return redirect()->route('contactSend')->with('success', 'le message a bien été envoyer');
+    // }
 }

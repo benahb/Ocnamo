@@ -42,7 +42,7 @@
             <li><a href="{{ route('main.menu') }}">Menu</a></li>
             <li><a href="{{ route('main.cartemenu') }}">Carte</a></li>
             <li><a href="{{ route('contact') }}">contact</a></li>
-            <li><a href="{{ route('main.reservation') }}">Réservation</a></li>
+            <li><a href="{{ route('reservation') }}">Réservation</a></li>
         </ul>
     </header>
     @yield('content')
