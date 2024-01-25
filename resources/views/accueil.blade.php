@@ -5,6 +5,9 @@
 @section('content')
 </head>
 <body>
+   
+   
+   
     <section class="banniere" id="banniere">
         
         <img src="{{ asset('/images\bg-img\2.jpg') }}" alt="image bg">

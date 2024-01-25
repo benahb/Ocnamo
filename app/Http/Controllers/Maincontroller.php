@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\models\Actu;
 use App\Models\Categorie;
+use App\Models\Plat;
+use App\Models\Etiquette;
 use Illuminate\Http\Request;
 
 class Maincontroller extends Controller
@@ -14,7 +16,7 @@ class Maincontroller extends Controller
     public function accueil()
     {
         $actus = Actu::all();
-        return view('accueil' , [
+        return view('accueil', [
             'actus' => $actus,
         ]);
        
@@ -40,6 +42,15 @@ class Maincontroller extends Controller
 
         return view('cartemenu', [
             'categories' => $categories,
+        ]);
+    }
+
+    public function plat(int $id)
+    {
+        $plat = Plat::find($id);
+
+        return view ('plat', [
+           'plat' => $plat,
         ]);
     }
    

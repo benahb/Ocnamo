@@ -18,30 +18,30 @@
 
                     @csrf
                     {{-- <label for="jour" class="control-label">Date</label> --}}
-                    <input type="date" placeholder="date" name="jour">
+                    <input type="date" placeholder="date" name="jour" required>
                     
                 </div>
                 <div class="inputboites">
                     {{-- <label for="name" class="control-label">Nom et prénom </label> --}}
-                    <input type="name" placeholder="votre nom et prénom" name="name">
+                    <input type="name" placeholder="votre nom et prénom" name="name" required>
                 </div>
                 <div class="inputboites">
                     
                     {{-- <label for="couvert" class="control-label">Nombre de couvert</label> --}}
-                    <input type="number" placeholder="Nombre de personnes" name="couvert">
+                    <input type="number" placeholder="Nombre de personnes" name="couvert" required>
                 </div>
                 <div class="inputboites">
                     {{-- <label for="telephone" class="control-label">Numéro téléphone</label> --}}
-                    <input type="telephone" placeholder="N° de télépohne" name="telephone">
+                    <input type="telephone" placeholder="N° de télépohne" name="telephone" required>
                 </div>   
                 <div class="inputboites">
                     {{-- <label for="heure" class="control-label">Séléctionez l'heure</label> --}}
-                    <input type="time" name="heure" id="">
+                    <input type="time" name="heure" id="" required>
                     
                 </div>
                 <div class="inputboites">
                     {{-- <label for="commentaire" class="control-label">Message</label> --}}
-                    <textarea placeholder="message" name="commentaire"></textarea>
+                    <textarea placeholder="message" name="commentaire"></textarea required>
                 </div>
                 <div class="inputboites">
                     <input type="submit" value="envoyer">

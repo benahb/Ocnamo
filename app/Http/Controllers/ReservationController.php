@@ -44,9 +44,9 @@ class ReservationController extends Controller
                                                 'jour'=>$jour, 'telephone'=>$telephone,'commentaire'=>$commentaire
         ]);
             if ($isInsertSuccress) echo 
-            '<h1>Votre reservation a été bien prise en compte</h1>';
+            '<h3>Votre reservation a été bien prise en compte</h3>';
             else echo 
-            '<h1>Erreur votre reservation non valider!  reessayer</h1>';
+            '<h3>Erreur votre reservation non valider!  reessayer</h3>';
             
       
     }

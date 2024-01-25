@@ -14,7 +14,7 @@
         <div class="contenu">
             <div class="box">
                 <div class="imbox">
-                    <img src="{{ asset('/images\img\Entrees\2.jpg') }}" alt="">
+                    <img src="{{ asset('images/pt10.jpg') }}" alt="">
                 </dIV>
                 <div class="text">
                     <a href="{{ route('main.cartemenu') }}" class="btn">Petit Dejeuner</a>
@@ -23,26 +23,26 @@
 
             <div class="box">
                 <div class="imbox">
-                    <img src="{{ asset('/images\img\Plats\imageedit_10_5656675552.jpg') }}" alt="">
+                    <img src="{{ asset('images/E15.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
-                    <h3>Les salades du chef</h3>
+                    <a href="{{ route('main.cartemenu') }}" class="btn">Les salades du chef</a>
                 </div>
             </div>
             <div class="box">
                 <div class="imbox">
-                    <img src="{{ asset('/images\img\Entrees\7.jpg') }}" alt="">
+                    <img src="{{ asset('images/E12.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
-                    <h3>Entrée</h3>
+                    <a href="{{ route('main.cartemenu') }}" class="btn">Entrée</a>
                 </div>
             </div>
             <div class="box">
                 <div class="imbox">
-                    <img src="{{ asset('/images\img\Plats\imageedit_1_2772269685.jpg') }}" alt="">
+                    <img src="{{ asset('images/p10.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
-                    <h3>Plat Principal</h3>
+                    <a href="{{ route('main.cartemenu') }}" class="btn">Plat Principal</a>
                 </div>
             </div>
             <div class="box">
@@ -50,7 +50,7 @@
                     <img src="{{ asset('/images\img\Desserts\d5.jpg') }}" alt="">
                 </DIV>
                 <div class="text">
-                    <h3>Dessert</h3>
+                    <a href="{{ route('main.cartemenu') }}" class="btn">Dessert</a>
                 </div>
             </div>
             <div class="box">
@@ -58,7 +58,7 @@
                     <img src="./b1.jpg" alt="">
                 </DIV>
                 <div class="text">
-                    <h3>Boisson</h3>
+                    <a href="{{ route('main.cartemenu') }}" class="btn">Boisson</a>
                 </div>
             </div>
         </div>

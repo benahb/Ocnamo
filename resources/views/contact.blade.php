@@ -14,27 +14,27 @@
         <div class="contactform">
         <form id="contact" action="formcreate" method="POST">
         @csrf
-            <h3>envoyer un message</h3>
+            <h3>Nous contacter</h3>
             <div class="inputboite">
-                <input type="text" placeholder="Nom et Prénom" name="nom">
+                <input type="text" placeholder="Nom et Prénom" name="nom" required>
             </div>
             <div class="inputboite">
-                <input type="text" placeholder="email" name="email">
+                <input type="text" placeholder="email" name="email" required>
             </div>
             <div class="inputboite">
-                <textarea placeholder="message" name="message"></textarea>
+                <textarea placeholder="message" name="message" required></textarea>
             </div>
             <div class="inputboite">
                 <input type="submit" value="envoyer">
             </div>
         </form>
-             {{-- @if (session('success'))
+             @if (session('success'))
             <div class="alert-success">
         
                 {{ session('success') }}
             </div>
              @endif
-             --}}
+            
         </div>
     </section>
     <section id="horaire" class="horaire">

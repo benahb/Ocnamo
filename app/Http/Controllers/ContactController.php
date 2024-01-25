@@ -14,6 +14,13 @@ class ContactController extends Controller
 
     public function formcreate(Request $request)
     {
+        // $request->validate([
+        //     'name'=> 'required',
+        //     'email'=> 'required',
+        //     'message'=> 'required',
+        // ]);    
+
+
         $data = $request->all();
         $nom = $request->input('nom');
         $email = $request->input('email');
@@ -25,8 +32,8 @@ class ContactController extends Controller
         
     ]);
         if($isInsertSuccress) echo 
-        '<h1>Message envoyé</h1>';
-        else echo '<h1>Erreur message non envoyer</h1>';
+        '<h3>Message envoyé</h3>';
+        else echo '<h3>Erreur message non envoyer</h3>';
 
     }
     
