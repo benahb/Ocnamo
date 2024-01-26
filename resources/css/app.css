@@ -23,6 +23,15 @@ header {
     align-items: center;
     transition: 0.5s;
 }
+ #log {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+}
 
 .logo {
     color: #c2c5c9;
@@ -63,8 +72,8 @@ header {
 }*/
 
 header .navbar li a:hover {
-    color: #1ac6fa;
-    border-bottom: 2px solid #2fceff;
+    color: #1678d3;
+    border-bottom: 2px solid #187fd3;
 }
 
 .banniere {
@@ -180,7 +189,7 @@ section {
 }
 
 .col50 p {
-    color: rgb(187, 194, 194);
+    color: rgb(250, 255, 255);
 }
 .titre-text span {
     color: #1f91fb;
@@ -188,7 +197,7 @@ section {
     font-weight: 700px;
 }
 .row .col50 img {
-    height: 450px;
+    height: 400px;
     width: 600px;
     position: relative;
     border-radius: 200px;
@@ -206,19 +215,24 @@ section {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-content: center;
-    margin-right: 120px;
+    margin-right: 80px;
     padding-top: 50px;
-    font-size: 1.2rem;
-    color: #b6a5a5;
+    
 }
 .col50img1
 {
     display: flex;
-   margin-left: 90px;
-    /* justify-content: flex-start;
-    align-content: flex-end; */
-}
+    flex-direction: row-reverse;
+    margin-left: 100px;
 
+}
+.col50img2 p{
+    padding-top: 30px;
+    align-content: center; 
+    font-size: 1.1rem;
+    color: #eaf0f0;
+    margin-left: 100px;
+}
 .menu {
     margin-top: -100px;
     background-color: #383636;
@@ -405,7 +419,7 @@ section {
 }
 
 .contact .titre-noir img {
-    width: 1300px;
+    width: 1480px;
     height: 800px;
     border-radius: 20px;
     display: flex;
@@ -498,7 +512,7 @@ section {
 }
 
 .reservation .titre-noire img {
-    width: 1300px;
+    width: 1480px;
     height: 800px;
     border-radius: 20px;
 }
@@ -618,9 +632,10 @@ section {
     position: relative;
 }
 .image img {
-    border-radius: 200px;
-    width: 300px;
-    height: 300px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
 }
 
 .google {
@@ -657,14 +672,14 @@ header.sticky {
 }
 
 header.sticky .logo {
-    color: #857979;
+    color: #686363;
 }
 header.sticky .navbar li a {
     color: #0a0a0a;
 }
 header.sticky li a:hover {
-    color: #2099e9;
-    border-bottom: 2px solid #fb911f;
+    color: #1ce43d;
+    border-bottom: 2px solid #3edf3e;
 }
 /* adaptation aux autre  format  tablette */
 
@@ -680,7 +695,7 @@ header.sticky li a:hover {
 
     header .navbar li a {
         text-decoration: none;
-        color: #111;
+        color: #1a1515;
         font-size: 1.2em;
         font-weight: 300;
     }
@@ -705,7 +720,7 @@ header.sticky li a:hover {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background: #fff;
+        background: #f0f3f0;
         align-items: center;
     }
 
@@ -750,6 +765,8 @@ header.sticky li a:hover {
     .menu {
         margin-top: 0px;
     }
+    
+    
 
     .row {
         display: flex;
@@ -769,16 +786,24 @@ header.sticky li a:hover {
         margin-left: 25%;
     }
 
-    .row .col50 {
+    .row .col50,
+    .col50img1{
         position: relative;
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        margin-right: 200px;
+        padding-right: 200px;
+    }
+
+    .col50 h2{
+        padding-top: 50px;
     }
 
     .row {
         flex-direction: column;
+        justify-content: center;
     }
     .plats img {
         display: grid;
@@ -816,6 +841,7 @@ header.sticky li a:hover {
     }
     .categorie h2 {
         font-size: 1.5rem;
+        padding-top: 80px;
     }
 
     .categorie .prix {
@@ -831,6 +857,12 @@ header.sticky li a:hover {
     }
     .buttoncontent {
         flex-direction: column;
+    }
+    .contact h2{
+        padding-top: 80px;
+    }
+    .reservation h2{
+        padding-top: 80px;
     }
 }
 
@@ -862,7 +894,7 @@ header.sticky li a:hover {
         grid-template-columns: min-content;
         width: 200px;
         height: 200px;
-        border-radius: 100px;
+        border-radius: 50%;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -911,10 +943,16 @@ header.sticky li a:hover {
     .buttoncontent {
         flex-direction: column;
     }
+    .buttoncontent a{
+        display: flex;
+        text-align:center;
+        justify-self:center;
+        align-items: center;
+    }
 }
 
 body {
-    background-color: #292424;
+    background-color: #4e4c4c;
     /* background-image: url(/public/images/bg-img/pexels-tae-fuller-1616113.jpg);
     background-repeat:no-repeat;
     background-size:cover; */
@@ -983,7 +1021,7 @@ body {
 }
 
 .categorie span {
-    color: #1248f8;
+    color: #139dec;
 }
 
 .categorie .prix {
@@ -1009,10 +1047,10 @@ body {
 }
 .buttoncontent {
     font-size: 0.9em;
-    color: #292121;
-    background: #67ec0e;
-    padding: 5px 10px;
-    margin-top: 10px;
+    color: #796e6e;
+    background: #0eec19;
+    padding: 5px 130px;
+    margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -1020,16 +1058,17 @@ body {
     margin-left: 10px;
     border-radius: 15px;
     transition: ease-out;
-    
+    size: 50px;
 
 }
 
 .buttoncontent:hover {
     color: #f8efbe;
-    background: #1fe006;
+    background: #d0f30a;
     letter-spacing: 4px;
 }
 
- .buttoncontent a{
-   text-decoration: none;
+.buttoncontent a{
+    text-decoration: none;
+    color: #31302a;
 } 

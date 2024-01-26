@@ -28,12 +28,12 @@
                 <input type="submit" value="envoyer">
             </div>
         </form>
-             @if (session('success'))
+            @if (session('success'))
             <div class="alert-success">
         
                 {{ session('success') }}
             </div>
-             @endif
+            @endif
             
         </div>
     </section>

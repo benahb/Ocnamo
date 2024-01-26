@@ -14,3 +14,7 @@ function toggleMenu() {
     navbar.classList.toggle('active');
 }
 
+const menutoggle = document.querySelector('.menutoggle');
+menutoggle.addEventListener('click', function () {
+    toggleMenu();
+});

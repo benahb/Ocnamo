@@ -13,15 +13,15 @@ class Plat extends Model
 
     protected $table = 'plats';
     protected $primarykey = 'id';
-   
+
     public function categories()
-     {
+    {
         return $this->belongsTo(categorie::class, 'categories_id','id')
         ->get();
-     }
+    }
 
-     public function etiquettes()
-     {
-         return $this->belongsToMany(Etiquette::class, 'etiquettes_plats', 'etiquettes_id', 'plats_id')->get();
-     }
+    public function etiquettes()
+    {
+        return $this->belongsToMany(Etiquette::class, 'etiquettes_plats', 'etiquettes_id', 'plats_id')->get();
+    }
 }

@@ -37,7 +37,7 @@ class ReservationController extends Controller
         $telephone = $request->input('telephone');
         $commentaire = $request->input('commentaire');
 
-       
+    
 
         $isInsertSuccress = Reservation::insert(['name'=>$name, 'couvert'=>$couvert,
                                                 'heure'=>$heure,
@@ -48,7 +48,7 @@ class ReservationController extends Controller
             else echo 
             '<h3>Erreur votre reservation non valider!  reessayer</h3>';
             
-      
+    
     }
     
 }

@@ -19,7 +19,7 @@ class Maincontroller extends Controller
         return view('accueil', [
             'actus' => $actus,
         ]);
-       
+    
     }
 
     public function apropos()
@@ -50,10 +50,11 @@ class Maincontroller extends Controller
         $plat = Plat::find($id);
 
         return view ('plat', [
-           'plat' => $plat,
-        ]);
+        'plat' => $plat,
+        
+    ]);
     }
-   
+
 
 
     // public function cartemenuController()
