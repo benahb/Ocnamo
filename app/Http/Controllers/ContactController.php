@@ -14,11 +14,11 @@ class ContactController extends Controller
 
     public function formcreate(Request $request)
     {
-        // $request->validate([
-        //     'name'=> 'required',
-        //     'email'=> 'required',
-        //     'message'=> 'required',
-        // ]);    
+        $validated = $request->validate([
+            'nom'=> 'required',
+            'email'=> 'required',
+            'message'=> 'required',
+        ]);    
 
 
         $data = $request->all();

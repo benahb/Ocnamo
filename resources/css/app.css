@@ -85,7 +85,10 @@ header .navbar li a:hover {
     align-items: center;
     /*background-image: url(public\images\bg-img\1.jpg);*/
     background-size: cover;
-    background-color: #000;
+    background-color: #222121;
+}
+.banniere h2{
+    color: blanchedalmond;
 }
 
 .banniere .contenu {
@@ -201,6 +204,7 @@ section {
     width: 600px;
     position: relative;
     border-radius: 200px;
+    padding-bottom: 20px;
 }
 
 .titre {
@@ -232,6 +236,7 @@ section {
     font-size: 1.1rem;
     color: #eaf0f0;
     margin-left: 100px;
+    margin-top: 5px;
 }
 .menu {
     margin-top: -100px;
@@ -599,14 +604,19 @@ section {
     background-color: #ccc6c6;
 }
 
-.horaire .texte h2 {
-    font-size: 1.2;
+.horaire .infohours h2 {
+    font-size: 0.7rem;
     display: flex;
     text-align: center;
     position: relative;
 }
+.texte h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .horaire .infohours h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: rgb(131, 73, 19);
     display: flex;
     justify-content: center;
@@ -678,8 +688,8 @@ header.sticky .navbar li a {
     color: #0a0a0a;
 }
 header.sticky li a:hover {
-    color: #1ce43d;
-    border-bottom: 2px solid #3edf3e;
+    color: #1c83e4;
+    border-bottom: 2px solid #3e7edf;
 }
 /* adaptation aux autre  format  tablette */
 
@@ -952,7 +962,7 @@ header.sticky li a:hover {
 }
 
 body {
-    background-color: #4e4c4c;
+    background-color: #333131;
     /* background-image: url(/public/images/bg-img/pexels-tae-fuller-1616113.jpg);
     background-repeat:no-repeat;
     background-size:cover; */

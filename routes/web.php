@@ -18,7 +18,7 @@ use App\Models\Reservation;
 |
 */
 
-// MainController
+//*****MainController*****//
 
 Route::get('/', [MainController::class, 'accueil'])->name('main.accueil');
 
@@ -30,16 +30,27 @@ Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name('main.carte
 
 Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
 
-// ContactController
+//******ContactController******//
 
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 
+
+
 Route::post('/formcreate', [ContactController::class, 'formcreate'])->name('formcreate');
 
-// ReservationController
+//***** ReservationController*****//
 
 Route::get('/reservation', [ReservationController::class, 'reservation'])->name('reservation');
 
-Route::post('/dataInsert', [ReservationController::class, 'DataInsert'])->name('dataInsert');
+Route::post('/reservation', [ReservationController::class, 'reservationStore'])->name
+('reservation.store');
+
+Route::get('/reservationIndex',[ReservationController::class,'reservationIndex'])->name('main.reservationIndex');
+
+Route::get('/reservationShow/{id}', [ReservationController::class, 'reservationShow'])->name('main.reservationShow');
+
+
+
+// Route::post('/dataInsert', [ReservationController::class, 'DataInsert'])->name('dataInsert');
 
 

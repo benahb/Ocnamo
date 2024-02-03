@@ -13,38 +13,63 @@
         </div>
         <div class="contactforme">
             <h3>Réservez une table <br> ou <br> Passez votre commande</h3>
-            <div class="inputboites">
-                <form id="reservation" action="dataInsert" method="POST">
-
-                    @csrf
-                    {{-- <label for="jour" class="control-label">Date</label> --}}
-                    <input type="date" placeholder="date" name="jour" required>
-                    
+            <div>
+                @foreach ($errors->all() as $error)
+                        {{ $error }}
+                @endforeach
+            </div>
+            <form id="reservation" action="{{route('reservation.store')}}" method="POST">
+                @csrf
+                <div class="inputboites">
+                    <label for="jour" class="control-label">Date</label>
+                    <input type="date" placeholder="date" name="jour" id="jour"  min="{{ date('Y-m-d') }}" value="{{ old('jour') }}" required>
+                    @error('jour')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="inputboites">
-                    {{-- <label for="name" class="control-label">Nom et prénom </label> --}}
-                    <input type="name" placeholder="votre nom et prénom" name="name" required>
+                    <label for="name" class="control-label">Nom et prénom </label>
+                    <input type="name" placeholder="votre nom et prénom" name="nom" id="nom" min="3" max="50" value="{{ old('nom') }}"required>
+                    @error('nom')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+                
+                <div class="inputboites">
+                    <label for="couvert" class="control-label">Nombre de couvert</label>
+                    <input type="number" placeholder="Nombre de personnes" name="couvert" id="couvert" min="1" max="16" value="{{ old('couvert') }}" required>
+                    @error('couvert')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="inputboites">
-                    
-                    {{-- <label for="couvert" class="control-label">Nombre de couvert</label> --}}
-                    <input type="number" placeholder="Nombre de personnes" name="couvert" required>
+                    <label for="heure" class="control-label">Séléctionez l'heure</label>
+                        <select name="heure" id="heure" required>
+                            <option value=""></option>
+                            @foreach ($heures as $heure)
+                            <option  value="{{ $heure }}" {{ old('heure') == $heure ? 'selected' : '' }}>{{ $heure }}</option>
+                            @endforeach
+                        </select>
+                    @error('heure')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror    
                 </div>
                 <div class="inputboites">
-                    {{-- <label for="telephone" class="control-label">Numéro téléphone</label> --}}
-                    <input type="telephone" placeholder="N° de télépohne" name="telephone" required>
+                    <label for="telephone" class="control-label">Numéro téléphone</label>
+                    <input type="phone" placeholder="N° de télépohne" name="telephone" id="telephone" value="{{ old('telephone')}}" required>
+                    @error('telephone')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>   
                 <div class="inputboites">
-                    {{-- <label for="heure" class="control-label">Séléctionez l'heure</label> --}}
-                    <input type="time" name="heure" id="" required>
-                    
+                    <label for="commentaire" class="control-label">Message</label>
+                    <textarea placeholder="message" name="commentaire" id="commentaire" cols="30" rows="10">{{ old('commentaire') }}</textarea>
+                    @error('commentaire')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="inputboites">
-                    {{-- <label for="commentaire" class="control-label">Message</label> --}}
-                    <textarea placeholder="message" name="commentaire"></textarea required>
-                </div>
-                <div class="inputboites">
-                    <input type="submit" value="envoyer">
+                    <input type="submit" value="Réservez">
                 </div>
             </form>
         </div>

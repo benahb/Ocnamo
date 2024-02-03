@@ -19,8 +19,9 @@
                     @endforeach
                 </ul>
                 <a href="{{ route('main.menu') }}" class="btn1">Notre Menu</a>
-            <a href="{{ route('reservation') }}" class="btn2">Réservation</a>
-        </div>
+                <a href="{{ route('reservation') }}" class="btn2">Réservation</a>
+                
+            </div>
     </section>
 @endsection
 
