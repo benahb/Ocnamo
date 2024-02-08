@@ -69,6 +69,10 @@
             <div class="jour">
                 <h4 class="day">Dimanche</h4>
                 <p class="hours"> Fermé</p>
+                <div class="jour-submit">
+                
+                    <a href="{{route('reservation')}}"><button type="submit">Réservez une table</button></a>
+                </div>
             </div>
             <div class="google">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.915993809401!2d3.0678050160850168!3d50.62867736061668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58d87da5f2d%3A0x739db98176c2b59d!2s5%20Bd%20Louis%20XIV%2C%2059800%20Lille!5e0!3m2!1sfr!2sfr!4v1703952206790!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

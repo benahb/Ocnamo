@@ -9,8 +9,8 @@ class Reservation extends Model
 {
     
 
-    public $table = 'reservations';
-    public $primarykey = 'id';
+    protected $table = 'reservations';
+    protected $primarykey = 'id';
     public $incrementing = true;
     public $timestamps = false;
 
@@ -18,7 +18,7 @@ class Reservation extends Model
 
     protected $fillable = 
     [
-        'name ',
+        'nom ',
         'couvert',
         'heure',
         'jour',

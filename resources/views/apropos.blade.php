@@ -22,7 +22,7 @@
                     Au restaurant O'Cnamo, nous sommes fiers de vous offrir une expérience culinaire qui va au-delà du
                     simple repas. C'est un voyage sensoriel à travers les traditions, les arômes et la générosité du
                     Cameroun. Nous sommes impatients de vous accueillir et de partager avec vous la richesse de notre
-                    cuisine.
+cuisine.
 
                     Réservez votre table dès maintenant et laissez-vous emporter par une aventure gastronomique camerounaise
                     exceptionnelle ! Notre équipe dédiée met tout en œuvre pour vous offrir bien plus qu'un simple repas :
@@ -47,6 +47,7 @@
                         camerounaises qui chatouillent vos sens. Notre équipe dévouée vous guidera à travers un menu
                         diversifié, mettant en valeur des plats traditionnels tels que le poulet DG, le Ndolé, le poisson
                         braisé et bien d'autres délices.</p>
+                
                 </div>
             </div>
         </div>

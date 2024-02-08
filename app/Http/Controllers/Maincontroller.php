@@ -55,12 +55,21 @@ class Maincontroller extends Controller
     ]);
     }
 
+    public function etiquette(int $id)
+    {
+        $etiquette = Etiquette::find($id);
+
+        return view ('etiquette', [
+        'etiquette' => $etiquette,
+        
+    ]);
+    }
 
 
-    // public function cartemenuController()
-    // {
-        // return view('cartemenu');
-    // }
+    public function photoAmbiance()
+    {
+        return view('photoAmbiance');
+    }
 
 
 }

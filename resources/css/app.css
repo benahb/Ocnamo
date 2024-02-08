@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap') */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +10,7 @@
 
 p {
     font-weight: 300;
-    color: #111;
+    color: #413e3e;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
     align-items: center;
     transition: 0.5s;
 }
- #log {
+#log {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -36,11 +38,16 @@ header {
 .logo {
     color: #c2c5c9;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
     text-decoration: none;
+    font-family: "Nova Script", system-ui;
 }
 .logo span {
     color: #1f98fb;
+    font-family: "Kaushan Script", system-ui;
+}
+span {
+    font-family: "Kaushan Script", system-ui;
 }
 
 .navbar {
@@ -53,7 +60,7 @@ header {
 }
 .navbar a {
     font-size: 1em;
-    color: #b6a5a5;
+    color: #e7e0e0;
     text-decoration: none;
     margin-left: 30px;
     font-weight: 300;
@@ -72,14 +79,18 @@ header {
 }*/
 
 header .navbar li a:hover {
-    color: #1678d3;
-    border-bottom: 2px solid #187fd3;
+    color: #57f4ff;
+    border-bottom: 2px solid #36d1e6;
+    border-top: 2px solid #18d3ba;
+}
+header .navbar li a {
+    transition: ease-out;
 }
 
 .banniere {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +98,7 @@ header .navbar li a:hover {
     background-size: cover;
     background-color: #222121;
 }
-.banniere h2{
+.banniere h2 {
     color: blanchedalmond;
 }
 
@@ -118,7 +129,7 @@ header .navbar li a:hover {
 }
 
 .btn1 {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: #fff;
     background: #208fe9;
     padding: 5px 10px;
@@ -133,7 +144,7 @@ header .navbar li a:hover {
 }
 
 .btn2 {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: #fff;
     background: #2099e9;
     padding: 5px 10px;
@@ -193,6 +204,7 @@ section {
 
 .col50 p {
     color: rgb(250, 255, 255);
+    text-align: justify;
 }
 .titre-text span {
     color: #1f91fb;
@@ -214,25 +226,22 @@ section {
     align-items: center;
     flex-direction: column;
 }
-.secondimg{
+.secondimg {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-content: center;
     margin-right: 80px;
     padding-top: 50px;
-    
 }
-.col50img1
-{
+.col50img1 {
     display: flex;
     flex-direction: row-reverse;
     margin-left: 100px;
-
 }
-.col50img2 p{
+.col50img2 p {
     padding-top: 30px;
-    align-content: center; 
+    align-content: center;
     font-size: 1.1rem;
     color: #eaf0f0;
     margin-left: 100px;
@@ -480,6 +489,7 @@ section {
     font-size: 16px;
     font-weight: 300;
     resize: none;
+    border-radius: 25px;
 }
 
 .contactform .inputboite input[type="submit"] {
@@ -540,9 +550,9 @@ section {
 .contactforme {
     position: relative;
     padding: 75px 50px;
-    background: #f3e9e9;
+    background: #fcffff;
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
-    max-width: 500px;
+    max-width: 700px;
     margin-top: -625px;
     justify-content: center;
     align-items: center;
@@ -554,11 +564,12 @@ section {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .contactforme h3 {
-    color: #111;
-    font-size: 1.2em;
+    color: #5a3410;
+    font-size: 1.5em;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -570,9 +581,10 @@ section {
     padding: 10px;
     color: #111;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     resize: none;
+    border-radius: 25px;
 }
 
 .contactforme .inputboites input[type="submit"] {
@@ -600,30 +612,51 @@ section {
     background: #1ac6fa;
 }
 
-.horaire {
-    background-color: #ccc6c6;
-}
-
 .horaire .infohours h2 {
     font-size: 0.7rem;
     display: flex;
     text-align: center;
     position: relative;
 }
-.texte h2{
+.texte h2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .horaire .infohours h3 {
     font-size: 1.5em;
-    color: rgb(131, 73, 19);
+    color: rgb(28, 141, 206);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.jour p {
+    color: rgb(199, 194, 194);
+}
+.jour h4 {
+    color: #85a7b9;
+}
+.jour-submit button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background: #0a59cf;
+    margin-top: auto;
+    text-transform: uppercase;
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: #d0e2df;
+    border: none;
+}
+
+.jour-submit button:hover {
+    background: #27aeec;
+    transition: ease-out;
+}
 .jour {
-    color: rgb(153, 94, 5);
+    color: rgb(38, 82, 163);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,8 +808,6 @@ header.sticky li a:hover {
     .menu {
         margin-top: 0px;
     }
-    
-    
 
     .row {
         display: flex;
@@ -797,7 +828,7 @@ header.sticky li a:hover {
     }
 
     .row .col50,
-    .col50img1{
+    .col50img1 {
         position: relative;
         width: 100%;
         justify-content: center;
@@ -807,7 +838,7 @@ header.sticky li a:hover {
         padding-right: 200px;
     }
 
-    .col50 h2{
+    .col50 h2 {
         padding-top: 50px;
     }
 
@@ -868,11 +899,22 @@ header.sticky li a:hover {
     .buttoncontent {
         flex-direction: column;
     }
-    .contact h2{
+    .contact h2 {
         padding-top: 80px;
     }
-    .reservation h2{
+    .reservation h2 {
         padding-top: 80px;
+    }
+    .block-actu {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: flex-start;
+    }
+    .plat-container img {
+        margin-left: 12%;
     }
 }
 
@@ -916,7 +958,6 @@ header.sticky li a:hover {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
-
     }
     .plats h4 {
         display: grid;
@@ -953,16 +994,27 @@ header.sticky li a:hover {
     .buttoncontent {
         flex-direction: column;
     }
-    .buttoncontent a{
+    .buttoncontent a {
         display: flex;
-        text-align:center;
-        justify-self:center;
+        text-align: center;
+        justify-self: center;
         align-items: center;
+    }
+    .block-actu {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: flex-start;
+    }
+    .plat-container img {
+        margin-left: 12%;
     }
 }
 
 body {
-    background-color: #333131;
+    background-color: #332c2c;
     /* background-image: url(/public/images/bg-img/pexels-tae-fuller-1616113.jpg);
     background-repeat:no-repeat;
     background-size:cover; */
@@ -972,7 +1024,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
     list-style: none;
@@ -992,9 +1044,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    align-items:space-between;
-    justify-content:space-around;
-    flex-direction:row;
+    align-items: space-between;
+    justify-content: space-around;
+    flex-direction: row;
     width: 300px;
     height: 300px;
     border-radius: 35%;
@@ -1011,8 +1063,9 @@ body {
     flex-direction: column;
     text-align: center;
     color: #e2f3f7;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 15px;
+    /* font-family: "Kaushan Script", system-ui; */
 }
 
 .categorie h3 {
@@ -1023,6 +1076,7 @@ body {
     margin-bottom: 30px;
     padding-bottom: 30px;
     margin-top: 50px;
+    /* font-family: "Kaushan Script", system-ui; */
 }
 .categorie h2 {
     font-size: 1.5rem;
@@ -1057,8 +1111,8 @@ body {
 }
 .buttoncontent {
     font-size: 0.9em;
-    color: #796e6e;
-    background: #0eec19;
+    color: #716e79;
+    background: #0eec0e;
     padding: 5px 130px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -1069,7 +1123,6 @@ body {
     border-radius: 15px;
     transition: ease-out;
     size: 50px;
-
 }
 
 .buttoncontent:hover {
@@ -1078,7 +1131,95 @@ body {
     letter-spacing: 4px;
 }
 
-.buttoncontent a{
+.buttoncontent a {
     text-decoration: none;
     color: #31302a;
-} 
+}
+.block-actu {
+    display: flex;
+    width: 100%;
+    grid-template-rows: repeat(33% 1fr);
+    justify-content: space-between;
+    flex-direction: calc(3 1fr);
+}
+.actus img {
+    width: 95%;
+    height: auto;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    justify-content: center;
+    border: #221f1f solid 1px;
+    padding: 10px;
+    background-color: #b6b1b1;
+    box-shadow: 5px 15px 50px rgba(139, 137, 137, 0.8);
+    /* z-index: 12; */
+}
+.actus p {
+    text-align: justify;
+    margin: 10px;
+    color: #1f1d1d;
+    height: 0 auto;
+    border: #666 solid 1px;
+    padding: 15px 15px;
+    background-color: silver;
+    box-shadow: 8px 15px 50px rgba(148, 142, 142, 0.8);
+    padding-top: 15;
+    box-sizing: border-box;
+}
+.actus h1 {
+    color: #c5c7b8;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 10px;
+}
+.btn-btn {
+    font-size: 1.2em;
+    color: #696464;
+    background: #3ef011;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 30%;
+    border-radius: 3px;
+}
+.btn-btn:hover {
+    letter-spacing: 4px;
+}
+.plat-container img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.plat-container h2 {
+    color: azure;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+.plat-container .prix {
+    color: rgb(54, 214, 15);
+    margin-left: 50%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.plat-container li {
+    color: rgb(208, 238, 191);
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.plat-container a {
+    display: ruby-text;
+     
+}

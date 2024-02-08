@@ -13,11 +13,15 @@
         </div>
         <div class="contactforme">
             <h3>Réservez une table <br> ou <br> Passez votre commande</h3>
-            <div>
-                @foreach ($errors->all() as $error)
-                        {{ $error }}
-                @endforeach
+            @if ($errors->any())
+            <div class="alert alert-danger" style="margin-top: 50px">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
+            @endif
             <form id="reservation" action="{{route('reservation.store')}}" method="POST">
                 @csrf
                 <div class="inputboites">

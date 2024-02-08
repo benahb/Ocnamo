@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
         rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nova+Script&display=swap" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -68,6 +68,7 @@
                 <li><a href="{{ route('main.cartemenu') }}">Carte</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 <li><a href="{{ route('reservation') }}">Réservation</a></li>
+                <li><a href="{{ route('main.photoAmbiance') }}">Gallery photos</a></li>
             </ul>
         </div>
     </header>
@@ -81,9 +82,9 @@
                     <div class="row g-5">
                         <div class="col-lg-3 col-md-6">
                             <h4 class="section-title ff-info text-start text-info fw-normal mb-4">Company</h4>
-                            <a class="btn btn-link" href="{{route('main.apropos')}}">Apropos de nous</a>
-                            <a class="btn btn-link" href="{{route('contact')}}">Contactez-nous</a>
-                            <a class="btn btn-link" href="{{route('reservation')}}">Reservation</a>
+                            <a class="btn btn-link" href="{{ route('main.apropos') }}">Apropos de nous</a>
+                            <a class="btn btn-link" href="{{ route('contact') }}">Contactez-nous</a>
+                            <a class="btn btn-link" href="{{ route('reservation') }}">Reservation</a>
                             <a class="btn btn-link" href="">Privacy Policy</a>
                             <a class="btn btn-link" href="">Termes & Condition</a>
                         </div>

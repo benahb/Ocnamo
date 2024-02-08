@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Contact extends Model
 {
-    public $table = 'contact';
-    public $primarykey = 'id';
+    protected $table = 'contact';
+    protected $primarykey = 'id';
     public $incrementing = true;
     public $timestamps = false;
 

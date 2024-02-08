@@ -30,6 +30,11 @@ Route::get('/cartemenu', [MainController::class, 'cartemenu'])->name('main.carte
 
 Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
 
+Route::get('/etiquette/{id}', [MainController::class, 'etiquette'])->name('main.etiquette');
+
+    // ******photoAMbiances******//
+
+    Route::get('/photoAmbiance', [MainController::class, 'photoAmbiance'])->name('main.photoAmbiance');
 //******ContactController******//
 
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');

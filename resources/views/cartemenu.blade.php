@@ -16,10 +16,10 @@
           <a href="{{ route('main.plat', ['id'=> $plat->id]) }}">
           <h4>{{$plat->nom}}</h4></a>
           <span class="prix">{{ $plat->prix }}.00 eur</span>
-          <button class="buttoncontent" type="submit" ><a href="{{ route('main.plat', ['id'=> $plat->id]) }}">voir plus</button></a>
+          <button class="buttoncontent" type="submit" ><a href="{{ route('main.plat', ['id'=> $plat->id]) }}">Voir le plat</button></a>
         <ul>
           @foreach ( $plat->etiquettes() as $etiquette )
-          <li>{{$etiquette->nom}}</li>
+          <li><a href="{{ route('main.etiquette', ['id'=> $etiquette->id]) }}">{{$etiquette->nom}}</a></li>
           @endforeach
         </ul>
         </li>
