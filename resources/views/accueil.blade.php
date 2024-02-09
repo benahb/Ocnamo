@@ -21,6 +21,13 @@
             </div>
             <div class="banniere2"></div>
         </section>
+        <section class="second-banniere">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
         <section>
             <div class="block-actu">
 
@@ -70,7 +77,7 @@
                 
                 @foreach ($actus as $actu)
                     <ul>
-                        <li>{{ $actus->contenu }} ({{ $actus->date_publication }})</li>
+                        <li>{{ $actu->contenu }} ({{ $actu->date_publication }})</li>
                     </ul>
                 @endforeach
 

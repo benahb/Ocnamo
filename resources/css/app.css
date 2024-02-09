@@ -7,6 +7,12 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
+#logpng{
+    width: 100px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
 
 p {
     font-weight: 300;
@@ -21,7 +27,8 @@ header {
     width: 100%;
     z-index: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: center;
     align-items: center;
     transition: 0.5s;
 }
@@ -41,9 +48,10 @@ header {
     font-size: 3em;
     text-decoration: none;
     font-family: "Nova Script", system-ui;
+    margin-bottom: 20px;
 }
 .logo span {
-    color: #1f98fb;
+    color:goldenrod;
     font-family: "Kaushan Script", system-ui;
 }
 span {
@@ -79,9 +87,9 @@ span {
 }*/
 
 header .navbar li a:hover {
-    color: #57f4ff;
-    border-bottom: 2px solid #36d1e6;
-    border-top: 2px solid #18d3ba;
+    color:goldenrod;
+    border-bottom: 2px solid goldenrod;
+    border-top: 2px solid goldenrod;
 }
 header .navbar li a {
     transition: ease-out;
@@ -113,6 +121,17 @@ header .navbar li a {
     font-size: 1em;
     text-transform: capitalize;
 }
+.banniere img{
+    max-height: 50%
+}
+.second-banniere{
+    background-color:goldenrod;
+    width: 90%;
+    margin: auto;
+    height: 10px;
+    
+}
+
 
 /* .banniere .contenu p{
     margin-right: 20px;
@@ -130,8 +149,8 @@ header .navbar li a {
 
 .btn1 {
     font-size: 0.9em;
-    color: #fff;
-    background: #208fe9;
+    color: #141313;
+    background:goldenrod;
     padding: 5px 10px;
     display: inline-block;
     margin-top: 10px;
@@ -145,8 +164,8 @@ header .navbar li a {
 
 .btn2 {
     font-size: 0.9em;
-    color: #fff;
-    background: #2099e9;
+    color: #161515;
+    background:goldenrod;
     padding: 5px 10px;
     display: inline-block;
     margin-top: 10px;
@@ -166,7 +185,7 @@ header .navbar li a {
 }
 
 section {
-    padding: 100px;
+    padding: 150px;
 }
 .row {
     position: relative;
@@ -182,7 +201,7 @@ section {
 
 .logoimg img {
     height: 150px;
-    border-radius: 75px;
+    border-radius: 15px;
     width: 150px;
 }
 
@@ -203,19 +222,24 @@ section {
 }
 
 .col50 p {
-    color: rgb(250, 255, 255);
+    color: rgb(68, 70, 70);
     text-align: justify;
+    border: 2px solid black;
+    padding: 25px;
+    background-color: rgb(211, 208, 208);
+    border-radius: 10px 80px;
+  
 }
 .titre-text span {
-    color: #1f91fb;
+    color:goldenrod;
     font-size: 1.5em;
     font-weight: 700px;
 }
 .row .col50 img {
     height: 400px;
-    width: 600px;
+    width: 650px;
     position: relative;
-    border-radius: 200px;
+    border-radius: 10px 150px;
     padding-bottom: 20px;
 }
 
@@ -243,9 +267,13 @@ section {
     padding-top: 30px;
     align-content: center;
     font-size: 1.1rem;
-    color: #eaf0f0;
-    margin-left: 100px;
+    color: #272929;
+    margin-left: 5px;
     margin-top: 5px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: rgb(211, 208, 208);
+    border-radius: 10px 60px;
 }
 .menu {
     margin-top: -100px;
@@ -271,15 +299,15 @@ section {
     margin: 20px;
     border: 20px solid #fff;
     box-shadow: 20px 15px 35px rgba(148, 126, 106, 0.8);
-    border-radius: 50px;
+    border-radius: 120px 5px;
 }
 
 .menu .contenu .box .imbox {
     position: relative;
     width: 100px;
     height: 300px;
-    border-radius: 50px;
-}
+    border-radius: 150px 15px;
+} 
 
 .menu .contenu .box .imbox img {
     position: relative;
@@ -288,7 +316,7 @@ section {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50px;
+    border-radius: 120px 15px;
 }
 
 .menu .contenu .box .text {
@@ -310,7 +338,7 @@ section {
     letter-spacing: 2px;
     transition: 0.5s;
     margin-left: 10px;
-    border-radius: 15px;
+    border-radius: 120px 5px;
 }
 
 .menu .contenu .box .text .btn:hover {
@@ -341,7 +369,7 @@ section {
     top: 0;
     left: 0;
     object-fit: cover;
-    border-radius: 300px;
+    border-radius:  0px 120px 0px 60px;
 }
 
 .expert .contenu .box h3 {
@@ -537,7 +565,7 @@ section {
     text-align: center;
 }
 .reservation span {
-    color: #1f98fb;
+    color:goldenrod;
     font-size: 2rem;
 }
 
@@ -721,8 +749,8 @@ header.sticky .navbar li a {
     color: #0a0a0a;
 }
 header.sticky li a:hover {
-    color: #1c83e4;
-    border-bottom: 2px solid #3e7edf;
+    color: goldenrod;
+    border-bottom: 2px solid goldenrod;
 }
 /* adaptation aux autre  format  tablette */
 
@@ -1013,6 +1041,7 @@ header.sticky li a:hover {
     }
 }
 
+/* *******cartemenu******* */
 body {
     background-color: #332c2c;
     /* background-image: url(/public/images/bg-img/pexels-tae-fuller-1616113.jpg);
@@ -1047,9 +1076,9 @@ body {
     align-items: space-between;
     justify-content: space-around;
     flex-direction: row;
-    width: 300px;
-    height: 300px;
-    border-radius: 35%;
+    width: 400px;
+    height: 400px;
+    border-radius: 100px 100px 0 0;
     margin: 30px;
     padding-bottom: 30px;
     padding-top: 20px;
@@ -1085,7 +1114,7 @@ body {
 }
 
 .categorie span {
-    color: #139dec;
+    color:goldenrod;
 }
 
 .categorie .prix {
@@ -1112,7 +1141,7 @@ body {
 .buttoncontent {
     font-size: 0.9em;
     color: #716e79;
-    background: #0eec0e;
+    background:goldenrod;
     padding: 5px 130px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -1152,6 +1181,7 @@ body {
     padding: 10px;
     background-color: #b6b1b1;
     box-shadow: 5px 15px 50px rgba(139, 137, 137, 0.8);
+    border-radius: 50px 5px;
     /* z-index: 12; */
 }
 .actus p {
@@ -1165,6 +1195,7 @@ body {
     box-shadow: 8px 15px 50px rgba(148, 142, 142, 0.8);
     padding-top: 15;
     box-sizing: border-box;
+    border-radius: 50px 5px;
 }
 .actus h1 {
     color: #c5c7b8;
@@ -1174,8 +1205,8 @@ body {
 }
 .btn-btn {
     font-size: 1.2em;
-    color: #696464;
-    background: #3ef011;
+    color: #2c2929;
+    background:goldenrod;
     padding: 5px 30px;
     display: inline-block;
     margin-top: 10px;
@@ -1188,6 +1219,7 @@ body {
 }
 .btn-btn:hover {
     letter-spacing: 4px;
+    background-color: #d0f30a;
 }
 .plat-container img {
     width: 500px;
@@ -1221,5 +1253,4 @@ body {
 
 .plat-container a {
     display: ruby-text;
-     
 }

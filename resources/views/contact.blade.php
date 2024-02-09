@@ -42,7 +42,7 @@
             <h2 class="titre-text"><span>H</span>oraires & <span>  A</span>dresse</h2>
         </div>
         <div class="image">
-            <img src="{{ asset('/logo\img10.png') }}" alt="image horaire">
+            <img src="{{ asset('logo/img 2.png') }}" alt="image horaire">
         </div>
         <div class="infohours">
                 <h3>Horaires d'ouverture</h3>

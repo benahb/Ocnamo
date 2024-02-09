@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name') }} - @yield('title')</title>
-    <link rel="shortcut icon" href="{{ asset('images/logo/img10.png') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('logo/img.png') }}" type="image/x-icon" />
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -58,6 +58,7 @@
 <body>
     <header>
         {{-- <img class="log" id="log" src="{{asset('logo/img10.png')}}" alt=""> --}}
+        <img id="logpng" src="{{asset('logo/img 2.png')}}" alt="">
         <a href="{{ route('main.apropos') }}" class="logo"><span>O</span>cnamo</a>
         <div class="menutoggle">
             <ul class="navbar">

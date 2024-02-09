@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col50">
                 <div class="logoimg">
-                    <img id="logo" src="{{ asset('logo/img10.png') }}" alt="logo">
+                    <img id="logo" src="{{ asset('img/bg-hero.jpg') }}" alt="logo">
                 </div>
                 <h2 class="titre-text"><span>A</span> Propos De Nous</h2>
 
@@ -46,7 +46,8 @@ cuisine.
                         Dès que vous franchissez nos portes, vous êtes accueilli par l'arôme envoûtant des épices
                         camerounaises qui chatouillent vos sens. Notre équipe dévouée vous guidera à travers un menu
                         diversifié, mettant en valeur des plats traditionnels tels que le poulet DG, le Ndolé, le poisson
-                        braisé et bien d'autres délices.</p>
+                        braisé et bien d'autres délices. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum veniam facilis fuga, nam at, ipsum dolorum ipsa, cumque corporis aspernatur illo dolorem? Modi architecto eos necessitatibus reiciendis dolorem magni.
+                        Temporibus rem nam explicabo eveniet qui aperiam error, delectus iste assumenda dolor vero nesciunt facilis earum molestiae quis cumque velit sit commodi mollitia. Provident dolore minima tempore illum, modi laboriosam.</p>
                 
                 </div>
             </div>

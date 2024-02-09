@@ -80,6 +80,7 @@
     </section>
     <section class="temoignage" id="temoingnage">
         <div class="titre blanc">
+            <img src="{{asset('logo/img 2.png')}}" alt="">
             <h2 class="titre-text">Que Disent Nos<span> C</span>lients</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae. </p>
         </div>
