@@ -6,6 +6,53 @@
     </head>
 
     <body>
+        <section id="top-header">
+            <div id="header-slider" class="carousel slide" data-ride="carousel">
+                
+                <ol class="carousel-indicators">
+                    <li data-target="#header-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-slider" data-slide-to="1"></li>
+                    <li data-target="#header-slider" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="fill" style="background-image:url('img/slider-1.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInLeft">Cuisine locale et fraiche</h2>
+                            <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Lire Plus</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="fill" style="background-image:url('img/slider-2.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInDown">Rang Comfortable</h2>
+                            <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Lire Plus</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="fill" style="background-image:url('img/slider-3.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInRight">Espace Agréable</h2>
+                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Lire Plus</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#header-slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précedent</span>
+                </a>
+                <a class="carousel-control-next" href="#header-slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+
+            </div>
+        </section>
 
         <section class="banniere" id="banniere">
 
@@ -30,57 +77,47 @@
         </section>
         <section>
             <div class="block-actu">
-
-                <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiselit. Dolor, rem quas eaque aliquid itaque
-                        officiis architecto vel. Non sequi aliquid reprehenderit dolorum ipsam ipsa ab quisquam iste
-                        natus doloremque? Magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis
-                        nesciunt officia consequuntur fugiat id incidunt rem, enim asperiores. Eum omnis porro deleniti
-                        saepe doloremque. Corrupti ab quam quia suscipit! Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Suscipit nihil quidem magnam voluptatum dolores eaque quam saepe! Natus, aut
-                        impedit. Sint dolorum assumenda praesentium vitae repellendus ad illum nulla accusantium?</p
-                    
-                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
-                
-                </div>
-                <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiselit. Dolor, rem quas eaque aliquid itaque
-                        officiis architecto vel. Non sequi aliquid reprehenderit dolorum ipsam ipsa ab quisquam iste
-                        natus doloremque? Magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis
-                        nesciunt officia consequuntur fugiat id incidunt rem, enim asperiores. Eum omnis porro deleniti
-                        saepe doloremque. Corrupti ab quam quia suscipit! Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Suscipit nihil quidem magnam voluptatum dolores eaque quam saepe! Natus, aut
-                        impedit. Sint dolorum assumenda praesentium vitae repellendus ad illum nulla accusantium?</p>
-                    
-                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
-                
-                </div>
-
-                <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, rem quas eaque aliquid itaque
-                        officiis architecto vel. Non sequi aliquid reprehenderit dolorum ipsam ipsa ab quisquam iste natus
-                        doloremque? Magnam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, optio itaque
-                        asperiores assumenda, consequatur sed pariatur amet eum rem porro quam ex quaerat fugit, iure
-                        nostrum voluptate laboriosam. Hic, tempore. Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minima, quia vel ducimus reiciendis omnis, exercitationem veniam impedit tempore, amet libero
-                        voluptas magnam velit quas eaque culpa in! Tempore, nobis porro.</p>
-
-                    <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
-
-                </div>
-                
                 @foreach ($actus as $actu)
-                    <ul>
-                        <li>{{ $actu->contenu }} ({{ $actu->date_publication }})</li>
-                    </ul>
+                <div class="actus">
+                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
+                    <h1>Nouvelle Actu</h1>
+                    <p>{{ $actu->contenu }}</p>
+                    <p>({{ $actu->date_publication }})</p>
+                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
+                
+                </div>
+                @endforeach
+                @foreach ($actus as $actu)
+                <div class="actus">
+                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
+                    <h1>Nouvelle Actu</h1>
+                    <p>{{ $actu->contenu }}</p>
+                    <p>({{ $actu->date_publication }})</p>
+                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
+                
+                </div>
                 @endforeach
 
+                @foreach ($actus as $actu)
+                <div class="actus">
+                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
+                    <h1>Nouvelle Actu</h1>
+                    <p>{{ $actu->contenu }}</p>
+                    <p>({{ $actu->date_publication }})</p>
+                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
+                
+                </div>
+                @endforeach
+                @foreach ($actus as $actu)
+                <div class="actus">
+                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
+                    <h1>Nouvelle Actu</h1>
+                    <p>{{ $actu->contenu }}</p>
+                    <p>({{ $actu->date_publication }})</p>
+                        <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
+                
+                </div>
+                @endforeach
             </div>
 
         </section>

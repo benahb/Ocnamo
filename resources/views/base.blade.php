@@ -8,34 +8,39 @@
     <title>{{ config('app.name') }} - @yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('logo/img.png') }}" type="image/x-icon" />
 
-
+    {{-- ****** link bootstrap ****** --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    {{-- ****** link de favicon ***** --}}
     <link href="{{ asset('img/favicon.ico') }}" rel="icon">
+        <!-- Favicons -->
+    
+    <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
+    <!--***** Google Fonts *****-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nova+Script&display=swap" rel="stylesheet">
-    <!-- Icon Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nova+Script&display=swap"
+        rel="stylesheet">
+
+    <!--****** Icon des Fonts Stylesheet *****-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Librairies Stylesheet -->
+    <!--******* Librairies Stylesheet bootstrap ******-->
     <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
 
-    <!-- Configuration Bootstrap Stylesheet -->
+    <!--***** Configuration Bootstrap Stylesheet *****-->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-    <!--  Stylesheet -->
+    <!--*****  Stylesheet *****-->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
+    {{-- ***** links bootstrap avec script  ***** --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,13 +49,20 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer>
     </script>
 
-
+    {{-- ***** links des fonts google poppins **** --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+        <!-- Librairies CSS Files -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/animate/animate.min.css" rel="stylesheet">
+        <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    {{-- ****** lien de @vite  ***** --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
@@ -58,18 +70,18 @@
 <body>
     <header>
         {{-- <img class="log" id="log" src="{{asset('logo/img10.png')}}" alt=""> --}}
-        <img id="logpng" src="{{asset('logo/img 2.png')}}" alt="">
+        <img id="logpng" src="{{ asset('logo/img 2.png') }}" alt="">
         <a href="{{ route('main.apropos') }}" class="logo"><span>O</span>cnamo</a>
         <div class="menutoggle">
             <ul class="navbar">
-                <li><a href="{{ route('main.accueil') }}" href="#banniere" onclick="toggleMenu();">Accueil</a></li>
-                <li><a href="{{ route('main.apropos') }}" href="#apropos" onclick="toggleMenu()">A propos de nous</a>
-                </li>
+                <li><a href="{{ route('main.accueil') }}" href="#banniere"onclick="toggleMenu();">Accueil</a></li>
                 <li><a href="{{ route('main.menu') }}" href="#menu" onclick="toggleMenu();">Menu</a></li>
                 <li><a href="{{ route('main.cartemenu') }}">Carte</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
                 <li><a href="{{ route('reservation') }}">Réservation</a></li>
+                <li><a href="{{ route('main.apropos') }}" href="#apropos" onclick="toggleMenu()">A propos de nous</a>
+                </li>
                 <li><a href="{{ route('main.photoAmbiance') }}">Gallery photos</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -168,7 +180,22 @@
     <script src="{{ asset('lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
     <script src="{{ asset('lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
+    <!-- JavaScript Libraries -->
+    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('vendor/jquery/jquery-migrate.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('vendor/easing/easing.min.js')}}"></script>
+    <script src="{{asset('vendor/stickyjs/sticky.js')}}"></script>
+    <script src="{{asset('vendor/superfish/hoverIntent.js')}}"></script>
+    <script src="{{asset('vendor/superfish/superfish.min.js')}}"></script>
+    <script src="{{asset('vendor/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('vendor/tempusdominus/js/moment.min.js')}}"></script>
+    <script src="{{asset('vendor/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    <script src="{{asset('vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
+
+
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
+
 </html>

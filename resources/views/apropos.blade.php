@@ -22,7 +22,7 @@
                     Au restaurant O'Cnamo, nous sommes fiers de vous offrir une expérience culinaire qui va au-delà du
                     simple repas. C'est un voyage sensoriel à travers les traditions, les arômes et la générosité du
                     Cameroun. Nous sommes impatients de vous accueillir et de partager avec vous la richesse de notre
-cuisine.
+                    cuisine.
 
                     Réservez votre table dès maintenant et laissez-vous emporter par une aventure gastronomique camerounaise
                     exceptionnelle ! Notre équipe dédiée met tout en œuvre pour vous offrir bien plus qu'un simple repas :
@@ -46,15 +46,71 @@ cuisine.
                         Dès que vous franchissez nos portes, vous êtes accueilli par l'arôme envoûtant des épices
                         camerounaises qui chatouillent vos sens. Notre équipe dévouée vous guidera à travers un menu
                         diversifié, mettant en valeur des plats traditionnels tels que le poulet DG, le Ndolé, le poisson
-                        braisé et bien d'autres délices. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laborum veniam facilis fuga, nam at, ipsum dolorum ipsa, cumque corporis aspernatur illo dolorem? Modi architecto eos necessitatibus reiciendis dolorem magni.
-                        Temporibus rem nam explicabo eveniet qui aperiam error, delectus iste assumenda dolor vero nesciunt facilis earum molestiae quis cumque velit sit commodi mollitia. Provident dolore minima tempore illum, modi laboriosam.</p>
-                
+                        braisé et bien d'autres délices. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        laborum veniam facilis fuga, nam at, ipsum dolorum ipsa, cumque corporis aspernatur illo dolorem?
+                        Modi architecto eos necessitatibus reiciendis dolorem magni.
+                        Temporibus rem nam explicabo eveniet qui aperiam error, delectus iste assumenda dolor vero nesciunt
+                        facilis earum molestiae quis cumque velit sit commodi mollitia. Provident dolore minima tempore
+                        illum, modi laboriosam.</p>
+
                 </div>
             </div>
         </div>
-
-
         </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-col-left">
+                        <img class="img-fluid" src="img/about-us.jpg" />
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="about-col-right">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <header class="section-header">
+                                    <h3>Qui Nous Somme</h3>
+                                </header>
+                                <ul class="icon">
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-pinterest"></a></li>
+                                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis quam sed tincidunt accumsan. Aliquam at tincidunt tortor, ac porta turpis. Curabitur lacinia venenatis semper.
+                                </p>
+                                <p>
+                                    Aliquam ut nibh ut lacus posuere facilisis. Vestibulum ullamcorper arcu et bibendum ultrices. Suspendisse rutrum turpis vitae.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="about-col">
+                                    <h4>Nos Qualités</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="about-col">
+                                    <h4>Nos Facilités</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim mi arcu, ut tristique dui eleifend a. Vivamus ac nulla metus. Vestibulum sit amet quam tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

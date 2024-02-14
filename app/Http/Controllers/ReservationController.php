@@ -70,21 +70,7 @@ class ReservationController extends Controller
             'reservation' => $reservation,
         ]);
     }
-
-    //admin/reservation
-    public function reservationIndex()
-    {
-        $reservations = Reservation::all();
-        return view('reservationIndex', ['reservations' => $reservations,]);
-    }
-    public function reservationShow(int $id)
-    {
-        $reservationShow = Reservation::find($id);
-
-        return view('reservationShow', [
-            'reservationShow' => $reservationShow,
-        ]);
-    }
+   
 
     // public function DataInsert(Request $request)
     // {

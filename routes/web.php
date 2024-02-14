@@ -1,5 +1,8 @@
 <?php
 
+
+use App\Http\Controllers\AdminReservationController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ReservationController;
@@ -50,12 +53,39 @@ Route::get('/reservation', [ReservationController::class, 'reservation'])->name(
 Route::post('/reservation', [ReservationController::class, 'reservationStore'])->name
 ('reservation.store');
 
-Route::get('/reservationIndex',[ReservationController::class,'reservationIndex'])->name('main.reservationIndex');
+// Route::get('/reservationIndex',[AdminReservationController::class,'reservationIndex'])->name('main.AdminReservationIndex');
 
-Route::get('/reservationShow/{id}', [ReservationController::class, 'reservationShow'])->name('main.reservationShow');
+// Route::get('/reservationShow/{id}', [AdminReservationController::class, 'reservationShow'])->name('main.reservationShow');
 
 
 
 // Route::post('/dataInsert', [ReservationController::class, 'DataInsert'])->name('dataInsert');
 
+route::get('/admin/reservation', [AdminReservationController::class, 'index'])->middleware('auth')->name('admin.reservation.index');
 
+route::get('/admin/reservation/create', [AdminReservationController::class, 'create'])->middleware('auth')->name('admin.reservation.create');
+
+route::post('/admin/reservation', [AdminReservationController::class, 'store'])->middleware('auth')->name('admin.reservation.store');
+
+
+
+route::get('/admin/reservation/{id}', [AdminReservationController::class, 'show'])->middleware('auth')->name('admin.reservation.show');
+
+route::get('/admin/reservation/{id}/edit', [AdminReservationController::class, 'edit'])->middleware('auth')->name('admin.reservation.edit');
+
+route::put('/admin/reservation/{id}', [AdminReservationController::class, 'update'])->middleware('auth')->name('admin.reservation.update');
+
+route::delete('/admin/reservation/{id}', [AdminReservationController::class, 'delete'])->middleware('auth')->name('admin.reservation.delete');
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

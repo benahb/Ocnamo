@@ -2,10 +2,19 @@
 
 @section('content')
 <section>
-        <h2 style="color: rgb(116, 153, 149);text-align:center">nom : {{$reservationShow->nom}}</h2>
-        <h2 style="color: rgb(203, 212, 212);text-align:center">nombre de couverts : {{$reservationShow->couvert}}</h2>
-        <h2 style="color: rgb(204, 219, 218);text-align:center">date : {{$reservationShow->jour}}</h2>
-        <h2 style="color: rgb(205, 211, 210);text-align:center">telephone : {{$reservationShow->telephone}}</h2>
-        <h2 style="color: rgb(194, 204, 203);text-align:center">commentaire : {{$reservationShow->commentaire}}</h2>
+    <h2 style="color: wheat; text-align:center">ReservationIndex</h2>
+    
+    <div>
+        <h2>{{ $reservation->id }}</h2>
+                                        <h2>{{ $reservation->nom }}</h2>
+                                        <h2>{{ $reservation->couverts }}</h2>
+                                        <h2>{{ $reservation->heure }}</h2>
+                                        <h2>{{ $reservation->jour }}</h2>
+                                        <h2>{{ $reservation->telephone }}</h2>
+                                        <h2>{{ $reservation->commentaires }}</h2>
+                                        <h2>{{ $reservation->created_at }}</h2>
+                                        <h2>{{ $reservation->updated_at }}</h2>
+    </div>
+
 </section>
 @endsection
