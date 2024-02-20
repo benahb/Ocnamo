@@ -8,21 +8,19 @@
 
 
 
-    <section class="reservation" id="reservation">
+<section class="reservation" id="reservation">
         <div class="titre-noire">
             <h2 class="titre-text1"><span>R</span>éservation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Possimus, eum velit. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Corporis ipsum magnam quisquam, reprehenderit ut distinctio architecto sequi
-                rerum, dolorum error asperiores.</p>
-            <img src="{{ asset('/images\bg-img\pexels-terje-sollie-313700.jpg') }}" alt="">
+            
+            <img src="{{ asset('img/reservations-bg.jpg') }}" alt="">
         </div>
         <div class="contactforme">
 
-            <form id="reservation" action="{{ route('admin.reservation.update', ['id' => $reservation->id]) }}" method="POST">
-                @csrf
-                @method('PUT')
+    <form id="reservation" action="{{ route('admin.reservation.update', ['id' => $reservation->id]) }}" method="POST">
+            @csrf
+            @method('PUT')
                 <di class="inputboites">
-                    <label for="jour" class="control-label">Date</label>
+                    <label for="jour" class="control-label" style="color:aquamarine">Date</label>
                     <input type="date" placeholder="date" name="jour" id="jour" min="{{ date('Y-m-d') }}"
                         value="{{ old('jour', $reservation->jour) }}" required>
                     @error('jour')
@@ -77,8 +75,8 @@
         <div class="inputboites">
             <input type="submit" value="Modifiez">
         </div>
-        </form>
+    </form>
         </div>
-    </section>
+</section>
 
 @endsection

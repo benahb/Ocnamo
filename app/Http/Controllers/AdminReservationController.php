@@ -92,7 +92,8 @@ class AdminReservationController extends Controller
     public function create()
 
     {
-        // $reservations = Reservation::all();
+        
+        $reservations = Reservation::all();
         return view('admin.reservation.create', [
             'heures' => $this->heures,
         ]);

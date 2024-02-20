@@ -1,7 +1,5 @@
 @extends('base')
 
-@section('content')
-    @extends('base')
 
 @section('title', 'Admin - Réservation - Index')
 

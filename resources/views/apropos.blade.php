@@ -5,7 +5,7 @@
 @section('content')
 
     <section class="apropos" id="apropos">
-        <div class="row">
+        <div class="row d-sm-flex flex-xl-wrap">
             <div class="col50">
                 <div class="logoimg">
                     <img id="logo" src="{{ asset('img/bg-hero.jpg') }}" alt="logo">
@@ -60,7 +60,7 @@
         </div>
     </section>
     <section id="about">
-        <div class="container">
+        <div class="container d-sm-flex flex-xl-wrap" >
             <div class="row">
                 <div class="col-lg-5">
                     <div class="about-col-left">

@@ -79,8 +79,8 @@
             <div class="block-actu">
                 @foreach ($actus as $actu)
                 <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
+                    <img src="{{ asset('images/291097 (1).jpg') }}" alt="">
+                    <h1>La Soirée Piano Bar</h1>
                     <p>{{ $actu->contenu }}</p>
                     <p>({{ $actu->date_publication }})</p>
                         <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
@@ -89,8 +89,8 @@
                 @endforeach
                 @foreach ($actus as $actu)
                 <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
+                    <img src="{{ asset('images/291972.jpg') }}" alt="">
+                    <h1>La Saison Camerounaise</h1>
                     <p>{{ $actu->contenu }}</p>
                     <p>({{ $actu->date_publication }})</p>
                         <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
@@ -100,8 +100,8 @@
 
                 @foreach ($actus as $actu)
                 <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
+                    <img src="{{ asset('images/560916.jpg') }}" alt="">
+                    <h1>La Saga N'dolé</h1>
                     <p>{{ $actu->contenu }}</p>
                     <p>({{ $actu->date_publication }})</p>
                         <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>
@@ -110,8 +110,8 @@
                 @endforeach
                 @foreach ($actus as $actu)
                 <div class="actus">
-                    <img src="{{ asset('img/bg-hero.jpg') }}" alt="">
-                    <h1>Nouvelle Actu</h1>
+                    <img src="{{ asset('images/366291.jpg') }}" alt="">
+                    <h1>La Nuit du Jazz Camerounaise</h1>
                     <p>{{ $actu->contenu }}</p>
                     <p>({{ $actu->date_publication }})</p>
                         <a href=""><button class="btn-btn" type="submit">Lire plus</button></a>

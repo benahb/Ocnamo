@@ -924,7 +924,7 @@ body {
     border-radius: 50px 5px;
 }
 .actus h1 {
-    color: #c5c7b8;
+    color: #a4b3f5;
     font-size: 2rem;
     text-align: center;
     margin: 10px 10px;
@@ -1068,7 +1068,8 @@ body {
 
     .row {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .temoignage h2 {
@@ -1185,6 +1186,10 @@ body {
     .banniere .contenu h2 {
         font-size: 2.2em;
         color: #fff;
+        width: 100%;
+    }
+    .row{
+        width: 100%;
     }
 
     .titre-text {
@@ -1192,6 +1197,7 @@ body {
         font-size: 2rem;
         font-weight: 300;
         text-transform: capitalize;
+        width: 100%;
     }
 
     .temoignage h2 {
@@ -1272,4 +1278,5 @@ body {
     .plat-container img {
         margin-left: 12%;
     }
+    
 }

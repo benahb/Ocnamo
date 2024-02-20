@@ -70,7 +70,7 @@ class ReservationController extends Controller
             'reservation' => $reservation,
         ]);
     }
-   
+
 
     // public function DataInsert(Request $request)
     // {
